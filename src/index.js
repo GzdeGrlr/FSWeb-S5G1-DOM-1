@@ -54,7 +54,7 @@ const body = document.querySelector("body")
 
 const nav = document.querySelector("nav");
 
-const anchors = document.getElementsByTagName("nav a")
+const anchors = document.querySelectorAll("nav a")
 
 nav.children[0].textContent=siteContent.nav["nav-item-1"];
 nav.children[1].textContent=siteContent.nav["nav-item-2"];
@@ -62,6 +62,10 @@ nav.children[2].textContent=siteContent.nav["nav-item-3"];
 nav.children[3].textContent=siteContent.nav["nav-item-4"];
 nav.children[4].textContent=siteContent.nav["nav-item-5"];
 nav.children[5].textContent=siteContent.nav["nav-item-6"];
+
+
+// nav.classList.add("italic")
+
 
 // var i=1;
 // nav.forEach( (a) => {
@@ -88,8 +92,6 @@ button.textContent=siteContent.cta.button
 
 const image1 = document.querySelector("#cta-img")
 image1.setAttribute( "src", siteContent.images["cta-img"])
-
-
 
 
 // const firstH4 = document.querySelector("h4")
